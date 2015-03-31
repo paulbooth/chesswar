@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CHESS WARS</title>
+    <script src="jquery.min.js"></script>
+    <script src="chesswar.js"></script>
+    <script src="randomAI.js"></script>
+    <script src="bestAI.js"></script>
+    <script src="TypeAI.js"></script>
+    <script src="CycleAI.js"></script>
+    <script src="CopyAI.js"></script>
+    <script src="Player.js"></script>
+    <link rel='stylesheet' href='bootstrap/css/bootstrap.min.css' />
+    <link rel='stylesheet' href='bootstrap/css/bootstrap-responsive.min.css' />
+    <link rel='stylesheet' href='css/standard.css' />
+  </head>
+  <body>
+    <div id="content" class="center">
+      <div id="scores">
+        <span id="p1score">P1: 0</span>
+        <span id="turn">Turn: 0</span>
+        <span id="p2score">P2: 0</span>
+      </div> 
+      <div id="player-input-1" style="display: none;">
+        <button id="rook" class = "btn btn-primary type">Rook</button>
+        <button id="knight" class = "btn type">Knight</button>
+        <button id="bishop" class = "btn type">Bishop</button>
+        <select id="lane" class = "btn"></select>
+        <button id="direction" class = "btn">UP</button>
+        <button id="takeTurn" class = "btn btn-success btn-lg">GO</button>
+      </div>
+      <table id="board_table" class="table table-bordered">
+      </table>
+      <div id="player-input-2" style="display: none;">
+        <button id="rook" class = "btn btn-primary type">Rook</button>
+        <button id="knight" class = "btn type">Knight</button>
+        <button id="bishop" class = "btn type">Bishop</button>
+        <select id="lane" class = "btn"></select>
+        <button id="direction" class = "btn">UP</button>
+        <button id="takeTurn" class = "btn btn-success btn-lg">GO</button>
+      </div>
+    </div>
+  </body>
+</html> 
+
+

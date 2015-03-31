@@ -1,0 +1,79 @@
+.monospace {
+	font-family: "Courier New", Courier, monospace;
+}
+
+#board_string {
+	margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  white-space: pre;
+}
+
+.center {
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+.player1normal {
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+.player1flip {
+  -moz-transform: scale(-1, -1);
+  -webkit-transform: scale(-1, -1);
+  -o-transform: scale(-1, -1);
+  -ms-transform: scale(-1, -1);
+  transform: scale(-1, -1);
+}
+
+.player2flip {
+  -moz-transform: scale(1, -1);
+  -webkit-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+
+#board_table tr td
+{
+    background-color: #fff;
+    padding:0px;
+    text-align: center;
+    vertical-align: middle;
+    font-size:250%;
+}
+
+#board_table tr:nth-child(even) td:nth-child(odd)
+{
+    background-color: #ccc;
+}
+
+#board_table tr:nth-child(odd) td:nth-child(even)
+{
+    background-color: #ccc;
+}
+
+#p1score {
+  float: left;
+}
+
+#p2score {
+  float: right;
+}
+
+#turn {
+  display:table;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#lane {
+  width: auto;
+}
